@@ -22,7 +22,7 @@ defmodule PuzzleAbTest do
     assert is_match("AABB", 4) == true
   end
 
-  test "return first match for example 1" do
+  test "return first match for examples" do
     assert get_string(3, 2) == "AAB"
     assert get_string(3, 0) == "BAA"
     assert get_string(4, 4) == "AABB"
