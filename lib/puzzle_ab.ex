@@ -33,7 +33,7 @@ defmodule PuzzleAb do
   def is_match(s, k) do
     matches = 0..String.length(s) - 2
     |> Enum.reduce(0, fn(start_idx, outer_acc) ->
-      1..String.length(s) - 1
+      start_idx + 1..String.length(s) - 1
       |> Enum.reduce(outer_acc, fn(end_idx, inner_acc) ->
         i = String.at(s, start_idx)
         j = String.at(s, end_idx)
