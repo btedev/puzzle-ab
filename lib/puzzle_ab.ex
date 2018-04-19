@@ -8,7 +8,7 @@ defmodule PuzzleAb do
     |> generate_strings
     |> Enum.find(fn(s) ->
       is_match(s, k)
-    end)
+    end) || ""
   end
 
   def generate_strings(n) do
